@@ -1,0 +1,10 @@
+.original{
+  background-color:purple;
+  color:deepskyblue;
+  border: none;
+  cursor: pointer;
+  height: 43px;
+  width: 78px;
+  font-size: larger;
+  border-radius: 8px;
+}

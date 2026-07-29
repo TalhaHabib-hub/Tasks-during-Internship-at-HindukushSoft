@@ -1,0 +1,332 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 3vh;
+    font-family: cursive;
+    
+}
+
+
+
+header{
+    background-color:rgb(18, 43, 36,0.96);
+    height: 12vh;
+    position: fixed;
+    width: 100%;
+    padding-top: 8px;
+    border-bottom: 0.4vh solid rgb(26, 90, 90);    
+   
+}
+header nav div{
+    display: inline-block;
+    font-family: caveat, cursive;
+    height: 8vh;
+    width: 3.9vw;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #caa748;
+}
+header a{
+    text-decoration: none;
+    font-family: caveat, cursive;
+    color:wheat ;
+
+}
+header nav{
+    padding:7px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+ 
+}
+#booking{
+    width: 16vw;
+    height: 8vh;
+    background-color: #caa748;
+    border-radius: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight:bold
+}
+#part1{
+     padding-top: 19vh;
+     background-color: #162d27;
+     width: 60%;
+     padding-left: 6vw;
+     height: 130vh;
+    line-height: 9vh;
+
+     
+}
+#part2{
+    padding-top: 19vh;
+    background-color: #e6961f;
+    width: 40%;
+    background-color: #162d27;
+    height: 120vh;
+}
+#together{
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    margin-bottom: 27vh;
+}
+#part1 #p1{
+    color: #3c8874;
+    height: 8vh;
+    width: 29vw;
+    border: 0.4vh solid rgb(26, 90, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 13px; */
+    border-radius: 50vh;
+    letter-spacing: 1px; 
+    font-size: 80%;
+}
+#part1 h1 pre{
+    font-family: caveat, cursive;
+    padding: 6px;
+    padding-top: 23px;
+    font-size: xx-large;
+    color: white;
+
+
+}
+#part1 h1 pre span{
+     color: #dba206;
+}
+#part1 #para {
+   color: aliceblue;
+   letter-spacing: 1px;
+   padding:23px 1px;
+   text-align: center;
+}
+#button1{
+    width: 17vw;
+    height: 11vh;
+    background-color: #caa748;
+    border-radius: 50vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px; 
+    font-weight: bold;
+    font-family: cursive;
+    
+   
+}
+#button2{
+    height: 11vh;
+    width: 17vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vw;
+    letter-spacing: 1px; 
+    margin-left: 14px;
+    font-weight: bold;
+}
+#buttons{
+    display: flex;
+}
+#counter{
+    padding-top: 34px;
+    display: flex;
+    /* justify-content: */
+    color: white;
+    letter-spacing: 1px;
+}
+
+.yellows{
+    color: rgb(245, 132, 2);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#box{
+    
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    background-color: rgba(3, 31, 23, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    color: white;
+    font-size: medium;
+    border: 2px solid rgb(38, 75, 75);
+   box-shadow: 29px 28px 11px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 26px;
+}
+
+#information{
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid white;
+    border-radius: 15px;
+    margin: 28px 8px 0px;
+    /* margin-top: 34px; */
+    background-color: rgb(204, 190, 190);
+   line-height: 18vh;
+    
+   
+
+}
+#information pre{
+   display: flex;
+   justify-content: center;
+   padding-top: 30px;
+   padding-left: 1vw;
+   color: rgb(0, 0, 0);
+   line-height: 20px;
+   /* font-size: ; */
+   font-weight: bolder;
+}
+#img{
+    border-radius: 50vw; 
+    width: 54px;
+    height: 12.6vh;
+    width: 6vw;
+    border: 1px solid rgb(255, 136, 0);
+}
+
+#together2{
+    background-color: #3c8874;
+    height: 100vh;
+    display: flex;
+    background-color: #162d27;
+    padding-bottom: 34vh;
+}
+#first #img2{
+    /* height: 90%;
+    width: 60%;*/
+    width: 36vw;
+    height: 88vh;
+    border: 1px solid rgb(38, 75, 75);
+    border-radius: 26px;
+    margin:11vh 10vh 54vh;
+    box-shadow: 29px 28px 11px 0px rgba(0, 0, 0, 0.28);
+}
+#dusra{
+    padding: 58px;
+}
+#inside{
+    display: flex;
+    /* background-color: #dba206; */
+    padding: 4px;
+}
+.boxes{
+    width: 14vw;
+    height: 19vh;
+    border: 2px solid rgb(61, 83, 65);
+    background-color:rgb(5, 43, 38);
+    margin-left:12px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    color: rgb(60, 95, 66);
+    /* font-weight: 900; */
+    font-size: 100%;
+    padding: 0.3vh;
+    text-align: center;
+     box-shadow: 29px 28px 11px 0px rgba(0, 0, 0, 0.28);
+}
+#dusra h3, #dusra h2{
+   color: rgb(245, 132, 2);
+}
+#dusra h2{
+    font-family: cursive;
+    text-decoration:  2px wavy rgb(245, 132, 2); 
+}
+#dusra p{
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#thisrra{
+    background-color: #162d27;
+}
+#thisrra h4{
+    color: rgb(231, 199, 17);
+    letter-spacing: 1px;
+    padding-left: 19px;
+    font-family: cursive;
+}
+#thisrra h2{
+    color:white;
+    padding-left: 19px;
+    font-family: cursive;
+}
+#thisrra p{
+    color: white;
+    padding-left: 19px;
+    letter-spacing: 1px;
+}
+#fourth{
+    display: flex;
+    /* justify-content:center; */
+    flex-wrap: wrap;
+    background-color: #162d27;
+    padding: 2% 10%;   
+    font-size: 3vh; 
+    
+}
+.dubba{
+     background-color: rgba(3, 31, 23, 0.4);
+    border: 2px solid rgb(13, 66, 41);
+    height: 60vh;
+    width: 30%;
+    margin: 1%;
+    border-radius: 15px;
+    box-shadow: 29px 28px 11px 0px rgba(0, 0, 0, 0.28);
+    padding: 1vw 0vw ;
+}
+.dubba  #para{
+    border: 2px solid rgb(15, 112, 67);
+    width:40%;
+    height: 12%;
+    border-radius: 18px;
+    margin: 7% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(15, 112, 67);
+}
+.dubba h4{
+    margin: 10% ;
+    font-family: cursive;
+    color: rgb(207, 153, 4);
+    letter-spacing: 1px;
+}
+.dubba  #khaana{
+    padding: 1%;
+    line-height:29px;
+    height: 35%;
+    width: 100%;
+    color: wheat;
+    letter-spacing: 1px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+#dodana{
+    margin:4px 23px 0px;
+    display: flex;
+    justify-content: space-between;
+     color: wheat;
+}
+
+

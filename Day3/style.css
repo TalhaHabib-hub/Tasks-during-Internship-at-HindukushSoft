@@ -1,0 +1,14 @@
+table{
+    border-collapse: collapse;
+}
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+#submit{
+    background-color: rgb(15, 88, 88);
+    color: white;
+    border-color:  rgb(15, 88, 88);;
+}

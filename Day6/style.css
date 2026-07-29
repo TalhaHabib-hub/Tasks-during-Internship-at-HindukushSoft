@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, #Heading{
+    position: fixed;
+    padding-bottom: 25px;
+
+}
+body{
+    background-color: rgb(46, 51, 46);
+    color: rgb(70, 86, 86);
+    font-family: cursive;
+}
+header{
+    background-color: rgba(6, 10, 5, 0.8);
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    padding-top: 5vh;
+    width: 100%;
+}
+#Heading{
+    background-color:  rgba(23, 54, 22, 0.6);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 17vh;
+    width: 100%;
+}
+#Heading a{
+    text-decoration: none;
+    margin-left: 4vh;
+    color: azure; 
+  
+}
+#about, #education, #skills, #projects, #contact, #bottom, header{
+    text-align: center;
+    color: azure;
+}
+#about{
+    padding-top: 24vh;
+}
+.one{
+    background-color: rgb(221, 217, 217);
+    border: 4px solid rgb(70, 78, 78);
+    border-radius: 5px;
+    text-align: center;
+}
+.box-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+table{
+    border-collapse: collapse;
+   
+    border-color: black;
+    color: black;
+
+    text-align: center;
+    background-color:  rgb(148, 121, 173);
+    border-radius: 5px;
+    margin: 2px 34%;
+    width: 30%;
+    
+}
+ul{
+text-align: center;
+border: 3px solid black;
+margin: 2px 40%;
+background-color: rgb(148, 121, 173);
+background:rgb(148, 121, 173) ;
+border-radius: 5px;
+list-style-type: none;
+}
+#box{
+ 
+
+    height: 250px;
+    width: 350px;
+    border: 2px solid rgb(58, 56, 56);;
+    margin:0 32%;
+    padding: 9px;
+    border-radius: 24px;
+    color: rgb(58, 56, 56);
+    background-color: rgb(170, 162, 162);
+   
+}
+input , textarea{
+    width: 100%;
+    border: 2px solid rgb(126, 114, 114);
+    border-radius: 9px;
+    height: 25%;
+    color: rgb(207, 201, 201);
+    background-color: rgb(58, 56, 56);
+}
+input{
+  height: 20%;
+}
+textarea{
+    height: 30%;
+}
+footer{
+    background-color: rgb(24, 49, 31,0.9);
+}
+footer a{
+    text-decoration: none;
+    color: azure;
+}

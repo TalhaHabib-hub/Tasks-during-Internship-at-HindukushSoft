@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day18</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#">
+      <h2>Contact Form</h2>
+      <label for="name" class="labels">Name</label>
+      <input type="text" id="name" />
+      <div class="error-message" id="nameMessageError">
+        This field is required
+      </div>
+      <label for="email" class="labels">Email</label>
+      <input type="text" id="email" />
+      <div class="error-message" id="emailMessageError">
+        This field is required
+      </div>
+      <label for="message" class="labels">Message</label>
+      <textarea id="message" rows="4"></textarea>
+      <div class="error-message" id="messageMessageError">
+        This field is required
+      </div>
+      <input type="submit" id="submitbut" />
+      <div class="success">form is submitted successfully✅</div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
