@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(16, 8, 50);
+  font-size: 14px;
+  color: rgb(16, 8, 50); 
+   /* background-color: blue; */
+}
+.card{
+  background-color:rgb(167, 169, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  height: 376px;
+  width: 335px;
+  border-radius: 15px;
+}
+.storeName{
+  border-radius: 5px;
+  height: 34px;
+  width: 100%;
+  border: 2px solid;
+  border-color:rgb(16, 8, 50);
+  display: flex;
+  overflow: hidden;
+}
+#name{
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(167, 169, 199);
+  color: rgb(16, 8, 50);
+}
+.theme{
+  cursor: pointer;
+  height: 43px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid  rgb(16, 8, 50); ;
+  /* background-color: rgb(167, 169, 199);
+  color:rgb(16, 8, 50); */
+  color: rgb(167, 169, 199);
+  background-color:rgb(16, 8, 50);
+  font-size: 14px;
+}
+.save{
+  cursor: pointer;
+  /* background-color: rgb(167, 169, 199);
+  color:rgb(16, 8, 50); */
+  color: rgb(167, 169, 199);
+  background-color:rgb(16, 8, 50);
+  height: 100%;
+  border: none;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: 700;
+  
+}
+#screen{
+  border-radius: 5px;
+  height: 113px;
+  width: 100%;
+  outline: none;
+  border: 2px solid  rgb(16, 8, 50) ;
+  font-size: 14px;
+  background-color: rgb(167, 169, 199);
+}
