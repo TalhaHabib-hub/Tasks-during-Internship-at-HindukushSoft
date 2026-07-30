@@ -1,77 +1,68 @@
-const nameToStore = document.querySelector('#name');
-const save = document.querySelector('.save');
-const screen = document.querySelector('#screen');
-const card = document.querySelector('.card')
-const storeName  = document.querySelector('.storeName');
-const theme = document.querySelector('.theme');
+const nameInput = document.querySelector("#name");
+const saveBtn = document.querySelector(".save");
+const themeBtn = document.querySelector(".theme");
+const screen = document.querySelector("#screen");
+const status = document.querySelector(".status");
 
-let themeState;
-
-
-const la = document.body;
-// changing all
-theme.addEventListener('click',()=>{
-  if (la.style.color === 'rgb(16, 8, 50)'){
-    themeState = 'light-dark';
-    localStorage.setItem('theme',themeState);
-    showScreen();
-la.style.color = 'rgb(167, 169, 199)';
-la.style.backgroundColor = ' rgb(167, 169, 199)';
-card.style.backgroundColor =' rgb(16, 8, 50)'; 
-storeName.style.border= '2px solid rgb(167, 169, 199)';
-nameToStore.style.backgroundColor = ' rgb(16, 8, 50)' 
-nameToStore.style.color = ' rgb(167, 169, 199)' 
-save.style.backgroundColor = 'rgb(167, 169, 199)'
-save.style.color = 'rgb(16, 8, 50)';
-theme.style.color = 'rgb(16, 8, 50)';
-theme.style.backgroundColor = 'rgb(167, 169, 199)';
-screen.style.color= 'rgb(167, 169, 199)';
-screen.style.backgroundColor = 'rgb(16, 8, 50)';
-screen.style.border = ' 2px solid  rgb(167, 169, 199)';}
-else{
-  themeState = 'dark-light';
-  localStorage.setItem('theme',themeState);
-   showScreen();
-la.style.color = 'rgb(16, 8, 50)';
-la.style.backgroundColor = ' rgb(16, 8, 50)';
-card.style.backgroundColor ='  rgb(167, 169, 199)'; 
-storeName.style.border= '2px solid rgb(16, 8, 50)';
-nameToStore.style.backgroundColor = 'rgb(167, 169, 199)' 
-nameToStore.style.color = ' rgb(16, 8, 50)' 
-save.style.backgroundColor = 'rgb(16, 8, 50)'
-save.style.color = 'rgb(167, 169, 199)';
-theme.style.color = 'rgb(167, 169, 199)';
-theme.style.backgroundColor = 'rgb(16, 8, 50)';
-screen.style.color= 'rgb(16, 8, 50)';
-screen.style.backgroundColor = 'rgb(167, 169, 199)';
-screen.style.border = ' 2px solid  rgb(16, 8, 50)';
-}
-}
-)
-
-
-
-
-
-
-
-
-
-save.addEventListener('click',()=>{
-  savefunction();
-  showScreen();
-}
-)
-function savefunction(){
-  if(nameToStore.value !== ''){
-localStorage.setItem('name',nameToStore.value)}
- 
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  themeBtn.textContent =
+    theme === "light" ? "Switch to dark theme" : "Switch to light theme";
 }
 
-
-
-
-function showScreen(){
-
- screen.value = `Stored name :${localStorage.getItem('name')} \n Currnet theme ${localStorage.getItem('theme')}`
+function showSavedInfo() {
+  const savedName = localStorage.getItem("name") || "No name saved yet";
+  const savedTheme = localStorage.getItem("theme") || "dark";
+  screen.value = `Stored name: ${savedName}\nActive theme: ${savedTheme}`;
 }
+
+function saveName() {
+  const value = nameInput.value.trim();
+
+  if (!value) {
+    status.textContent = "Please enter a name before saving.";
+    return;
+  }
+
+  localStorage.setItem("name", value);
+  status.textContent = `Saved: ${value}`;
+  showSavedInfo();
+}
+
+function toggleTheme() {
+  const currentTheme =
+    localStorage.getItem("theme") === "light" ? "light" : "dark";
+  const nextTheme = currentTheme === "dark" ? "light" : "dark";
+
+  localStorage.setItem("theme", nextTheme);
+  applyTheme(nextTheme);
+  showSavedInfo();
+  status.textContent = `Theme changed to ${nextTheme}`;
+}
+
+function loadSavedData() {
+  const savedName = localStorage.getItem("name");
+  const savedTheme =
+    localStorage.getItem("theme") === "light" ? "light" : "dark";
+
+  if (savedName) {
+    nameInput.value = savedName;
+  }
+
+  applyTheme(savedTheme);
+  showSavedInfo();
+
+  status.textContent = savedName
+    ? `Welcome back, ${savedName}!`
+    : "Save your name and theme locally.";
+}
+
+saveBtn.addEventListener("click", saveName);
+themeBtn.addEventListener("click", toggleTheme);
+nameInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    saveName();
+  }
+});
+
+window.addEventListener("DOMContentLoaded", loadSavedData);
