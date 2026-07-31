@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bbg: rgb(66, 11, 11);
+  --cnt: white;
+  --text: rgb(66, 11, 11);
+  --brdr: rgb(66, 11, 11);
+  --btn: rgb(66, 11, 11);
+}
+:root[new-theme="Talha"] {
+  --bbg: white;
+  --cnt: rgb(66, 11, 11);
+  --text: white;
+  --brdr: white;
+  --btn: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bbg);
+}
+h1 {
+  color: var(--cnt);
+  margin-bottom: 2px;
+}
+.container {
+  width: 436px;
+  height: 503px;
+  background-color: var(--cnt);
+  padding: 12px;
+  border-radius: 5px;
+}
+.screen,
+.task {
+  height: 35px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: var(--cnt);
+  color: var(--bbg);
+  text-align: center;
+  outline: 0;
+}
+
+.save,
+.delete {
+  width: 54px;
+  height: 36px;
+  border: 0;
+  background-color: var(--btn);
+  border-radius: 7px;
+  color: var(--cnt);
+  transition: transform 0.2s ease;
+}
+.save {
+  background-color: var(--cnt);
+  color: var(--brdr);
+  border: 2px solid var(--bbg);
+  margin-left: 4px;
+}
+.save:hover,
+.delete:hover {
+  transform: translateY(-2px);
+}
+.save:active,
+.delete:active {
+  transform: scale(0.98);
+}
+#time,
+.timetaken {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: 0;
+}
+#time {
+  background-color: var(--bbg);
+  color: var(--cnt);
+  border-radius: 7px;
+  border-color: var(--cnt);
+}
+.mood {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  position: absolute;
+  border: 0;
+  border: 2px solid var(--cnt);
+  top: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.changeMood {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  border: 0;
+  border: 2px solid var(--bbg);
+  top: 2px;
+  margin-top: 1px;
+  background-color: var(--cnt);
+  color: var(--bbg);
+  transition: transform 0.2s ease;
+}
+.changeMood:hover {
+  transform: translateY(-1px);
+}
+.changeMood:focus {
+  transform: scale(0.98);
+}
+.task {
+  height: 35px;
+  width: 166px;
+  border: 2px solid;
+  border-radius: 7px;
+  border-color: var(--bbg);
+}
+.first {
+  display: flex;
+  border: 6px solid var(--brdr);
+  padding: 4px;
+  position: relative;
+  bottom: 7px;
+  border-radius: 5px;
+}
+.stores {
+  display: flex;
+  margin-top: 8px;
+  border: 2px solid;
+  padding: 4px;
+  border: 6px solid var(--brdr);
+  border-radius: 7px;
+  color: var(--text);
+  font-size: bold;
+}
