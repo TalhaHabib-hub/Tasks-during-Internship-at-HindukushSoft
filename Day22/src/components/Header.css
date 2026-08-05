@@ -1,0 +1,17 @@
+.navbar{
+  width: 100%;
+  background-color: #222f3b;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+}
+.navbar ul{
+   display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.navbar ul li{
+  list-style: none;
+  cursor: pointer;
+}
