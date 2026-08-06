@@ -1,4 +1,5 @@
 import Button from './components/button'
+import Toggle from './components/Toggle'
 import { useState } from 'react'
 import './App.css'
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className={mode}>
       <Button />
-      <button onClick={()=>{setMode(mode === 'light' ? 'dark' : 'light')}}>Toggle Theme</button>
+      <Toggle/>
     </div>
   )
 }

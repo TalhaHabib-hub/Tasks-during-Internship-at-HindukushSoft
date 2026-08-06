@@ -1,0 +1,19 @@
+.button-click{
+  background-color: rgb(167, 82, 82);
+  height: 34px;
+  width: 84px;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.3s linear;
+  font-size: 17px;
+  font-weight: 700;
+}
+.button-click:hover{
+  transform: translateY(-3px);
+   box-shadow: 0px 5px 5px 0px rgba(200, 195, 195, 0.17);
+   color: white;
+}
+.button-click:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
