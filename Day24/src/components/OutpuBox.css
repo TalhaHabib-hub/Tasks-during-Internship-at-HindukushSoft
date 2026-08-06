@@ -1,0 +1,50 @@
+.outputBox {
+ color: white;
+  background-color: rgba(15, 122, 193, 0.7);
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 258px;
+  height: 283px;
+  margin: 23px;
+  box-shadow: 0 0 5px #e3d5d5;
+}
+.round{
+  height: 44px;
+  background-color: rgba(0, 0, 255,0.6);
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 4px;
+  padding-right: 2px;
+  box-shadow: 0 0 5px #7f7979;
+}
+.name, .round{ 
+  font-weight: bold;
+}
+.name , .email, .student{
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.student{
+  height: 23px;
+  background-color: rgba(0, 0, 255,0.6);
+  width: 100px;
+  border-radius: 9px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 5px #7f7979;
+}
+.message{
+  margin-bottom: 23px;
+}
