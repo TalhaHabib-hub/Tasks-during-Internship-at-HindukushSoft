@@ -9,7 +9,7 @@ function App() {
   return (
     <div className={mode}>
       <Button />
-      <Toggle/>
+      <Toggle mode={mode} setMode={setMode} />
     </div>
   )
 }
