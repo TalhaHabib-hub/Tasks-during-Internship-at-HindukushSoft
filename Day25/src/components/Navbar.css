@@ -1,0 +1,58 @@
+.navbar{
+  background-color: blue;
+}
+.container-fluid {
+    background-color: #092421;
+    height: 54px;
+  box-shadow: 0 7px 7px 0 rgb(24, 59, 41);
+}
+.navbar-brand, .nav-item a strike,.navbar-nav li a,.navbar-nav .nav-link.active {
+  color: rgb(177, 204, 199);
+  border-bottom: 2px solid #092421;
+
+}
+.navbar-brand:hover, .nav-item a strike:hover,.navbar-nav li a:hover,.navbar-nav .nav-link.active:hover {
+  color: rgb(177, 204, 199);
+  border-bottom: 2px solid rgb(177 204 199);
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        padding: 12px;
+        width: 100vw;
+        position: fixed;
+        z-index: 100;
+        top: -2px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;       border-radius: 5px;
+
+    }
+  }
+@media (max-width: 992px) {
+    .navbar-expand-lg {
+        width: 100vw;
+        position: fixed;
+        z-index: 100;
+        top: -8px;
+        margin: 2px;;
+    }
+
+  }
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        height: 53px;
+    }
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+.navbar-toggler-icon {
+   
+    background-image:  rgb(177, 204, 199);
+    
+}
+.boxIcon{
+  color: rgb(177, 204, 199);
+}

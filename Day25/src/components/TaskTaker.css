@@ -1,0 +1,52 @@
+.TaskDown{
+  margin-top: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(177 204 199);
+  border-top: 2px;
+  width: 456px;
+  border-radius: 4px;
+  box-shadow: 0 7px 7px 0 rgb(28, 31, 29);
+
+}
+#time{
+  width: 103px;
+  margin: 4px;
+  height: 38px;
+  background-color: rgb(177 204 199);
+  border: 0;
+  border-radius: 4px;
+  color:#092421;
+  position: relative;
+  right: -19px;
+}
+#task{
+  height: 38px;
+  width: 206px;
+  margin: 4px;
+  background-color: rgb(68, 121, 86);
+  border: 0;
+  outline: none;
+  color:rgb(177 204 199);
+}
+.btn-success{
+  height: 38px;
+  background-color: #092421;
+  color: rgb(177 204 199);
+  position: relative;
+  right: -23px;
+  border: 0;
+}
+.btn-success:hover{
+  background-color: rgb(28, 31, 29);
+  transform: translateY(-1px);
+  transition:0.3s ease;
+}
+.btn-success:active{
+  transform: translateY(0);
+  background-color: rgb(28, 31, 29);
+}
+.btn-success:focus{
+  background-color: rgb(28, 31, 29);
+}

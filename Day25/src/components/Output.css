@@ -1,0 +1,55 @@
+.shower{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+ max-width: 455px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+
+}
+.timeTaken{
+  width: 93px;
+  margin: 4px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(248, 232, 246);
+
+}
+.taskTaken{
+  height: 38px;
+  width: 206px;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(15, 87, 85);
+  background-color: rgb(248, 232, 246);
+  border-radius:  0 9px 9px 0;
+  box-shadow: 0 7px 7px 0 rgb(28, 31, 29);
+}
+.btn-primary{
+  background-color: rgb(248, 232, 246);
+  position: relative;
+  right: -23px;
+  border: none;
+  font-weight: bold;
+  color: rgb(15, 87, 85);
+  box-shadow: 0 7px 7px 0 rgb(28, 31, 29);
+  
+}
+.btn-primary:hover{
+  color: rgb(248, 232, 246);
+  background-color: rgb(16, 100, 97);
+
+}
+.btn-primary:hover{
+  color: rgb(248, 232, 246);
+  background-color:rgba(101, 101, 242, 0.789);
+
+}
