@@ -34,6 +34,7 @@
   color: rgb(177 204 199);
   border: 0;
   max-width: 64px;
+  margin-right: 4px;
 }
 .btn-success:hover{
   background-color: rgb(28, 31, 29);
