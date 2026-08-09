@@ -1,7 +1,7 @@
 .TaskDown{
   margin-top: 94px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   border: 3px solid rgb(177 204 199);
   border-top: 2px;
@@ -11,31 +11,27 @@
 
 }
 #time{
-  max-width: 103px;
   margin: 4px;
   height: 38px;
   background-color: rgb(177 204 199);
   border: 0;
   border-radius: 4px;
   color:#092421;
-  position: relative;
-  right: -29px;
 }
 #task{
   height: 38px;
-  max-width: 206px;
   margin: 4px;
   background-color: rgb(68, 121, 86);
+  flex: 1;
   border: 0;
   outline: none;
+  min-width: 3px;
   color:rgb(177 204 199);
 }
 .btn-success{
   height: 38px;
   background-color: #092421;
   color: rgb(177 204 199);
-  position: relative;
-  right: -33px;
   border: 0;
   max-width: 64px;
 }
