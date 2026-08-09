@@ -21,7 +21,8 @@
 
 }
 .taskTaken{
-  height: 38px;
+  padding: 6px;
+  min-height: 38px;
   width: 206px;
   margin: 4px;
   display: flex;
