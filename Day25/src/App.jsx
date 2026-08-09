@@ -23,8 +23,16 @@ function App() {
     <>
       <center>
         <Navbar />
-        <TaskTaker input={input} setinput={setinput} handleAddTask={handleAddTask} handleTextChange={handleTextChange}></TaskTaker>
-        <Output outputs={Outputs} setOutputs={setOutputs}></Output>
+        <TaskTaker 
+        input={input} 
+        setinput={setinput} 
+        handleAddTask={handleAddTask} 
+        handleTextChange={handleTextChange}>
+        </TaskTaker>
+
+        <Output 
+        outputs={Outputs} 
+        setOutputs={setOutputs}></Output>
       </center>
     </>
   );
