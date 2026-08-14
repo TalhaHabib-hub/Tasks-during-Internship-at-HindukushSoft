@@ -11,7 +11,7 @@ export default function Output({ outputs, setOutputs }) {
           <button
             type="button"
             className="btn btn-primary"
-            onClick={() => setOutputs(outputs.filter((_, i) => i !== idx))}
+            onClick={() => setOutputs(outputs.filter((_,i) => i !== idx))}
           >
             remove
           </button>
