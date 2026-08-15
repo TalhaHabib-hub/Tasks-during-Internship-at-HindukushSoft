@@ -1,0 +1,1 @@
+<h3>This a post page you created inside a views</h3>
